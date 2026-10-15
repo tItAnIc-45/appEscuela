@@ -3,7 +3,8 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
-import Navbar from './components/Navbar/Navbar'
+import Navbar from './components/Navbar/Navbar';
+import Contador from './components/Contador/Contador';
 import AlumnoCard from './components/AlumnoCard/AlumnoCard';
 
 function App() {
@@ -14,25 +15,32 @@ function App() {
       <Navbar/>
       <div className="container">
         <h2 className="mb-4">Directorio de Alumnos</h2>
+        
         <div className="row"></div>
-      <AlumnoCard
+      
+       <AlumnoCard
         nombre="Daniel Puccio"
         carrera="Desarrollo de Software"
-        estado="Matriculado"
-      />
+        estadoInicial="Matriculado"
+       />
       
-      <AlumnoCard
+       <AlumnoCard
         nombre="Maria Perez"
         carrera="Diseño Gráfico"
         estado="Inactivo"
-      />
+       />
       
-      <AlumnoCard
+       <AlumnoCard
         nombre="Carlos Mendoza"
         carrera="Administración Industrial"
         estado="Matriculado"
-      />
-      </div>
+       />
+     </div>
+
+     <Contador
+     
+     />
+
     </>
   )
 }
